@@ -1,3 +1,4 @@
+/* remove margins and padding, set a min width and height */
 html,
 body {
 	margin:0;
@@ -5,38 +6,32 @@ body {
 	height:100%;
   min-width: 320px;
 }
-#wrapper {
+/* ======================================================== */
+
+#content {
+	margin: 25px 0px;
+	border: solid red 1px;
+}
+
+/* contains the HTML page */
+.container {
 	min-height:100%;
 	position:relative;
 }
-#header {
-	background: salmon;
-  height: 25px;
-	/*padding:10px;*/
-}
-#content {
-	padding-bottom:25px; /* Height of the footer element */
-}
-#footer {
-	background: salmon;
-	width:100%;
-	height:25px;
-	position:absolute;
-	bottom:0;
-	left:0;
-}
 
-/* ============= */
-/* identify the navbar */
+
+/* ======================================================== */
+/* navbar sets line height to center contained text */
 .navbar {
-  position: relative;
-  height: 100%;
-  width: 100%;
+	border: solid red 1px;
+	position: relative;
+	background: salmon;
+	min-height: 25px;
+	line-height: 25px;
 }
 
-/* remove bullets, margin, and padding from the list, float appropriately */
+/* remove bullets, margin, and padding from the list */
 .navbar-list{
-  float: left;
   list-style-type: none;
   width: 100%;
   margin: 0px;
@@ -51,15 +46,24 @@ body {
   text-align: center;
 }
 
-.navbar li a {
+.navbar-link {
   color: blue;
   position: relative;
   top: 30%;
 }
 
-/* ============= */
+/* ======================================================== */
+/* footer sets line height to center contained text */
+.footer {
+	border: solid red 1px;
+	position: relative;
+	background: salmon;
+	min-height: 25px;
+	line-height: 25px;
+}
 
-.center-div{
+/* horizontally centered div */
+.center-horz{
   position: absolute;
   margin: auto;
   top: 0;
@@ -70,8 +74,4 @@ body {
   height: 25px;
   background-color: #ccc;
   border-radius: 3px;
-}
-
-.text-center-vertical{
-  line-height: 25px; /* same size as the height of the parent div */
 }
