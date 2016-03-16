@@ -1,0 +1,147 @@
+/* remove margins and padding, set a min width and height*/
+html,
+body {
+	margin:0;
+	padding:0;
+	height:100%;
+  min-width: 320px;
+	min-height: 580px;
+	border: solid red 1px;
+}
+/* ======================================================== */
+
+/* contains the HTML page */
+.container {
+	position: relative;
+	min-height:100%;
+}
+
+#content {
+	position: relative;
+	margin: 25px 0px;
+	border: solid green 5px;
+	max-height: 50%;
+	overflow: auto;
+}
+
+/* ======================================================== */
+/* main content of the page*/
+.thumbnail-vhc{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	border: solid red 1px;
+	width: 50%;
+	max-width: 400px;
+	height: 80%;
+}
+/* ======================================================== */
+/* navbar sets line height to center contained text */
+.navbar {
+	position: relative;
+	background: salmon;
+	min-height: 25px;
+	line-height: 25px;
+}
+
+/* remove bullets, margin, and padding from the list */
+.navbar-list{
+  list-style-type: none;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* displays list items on the same line as a block */
+.navbar li{
+  display: inline-block;
+  width: 24%;
+  min-width: 75px;
+  text-align: center;
+}
+
+.navbar-link {
+  color: blue;
+  position: relative;
+  top: 30%;
+}
+
+/* ======================================================== */
+/* footer sets line height to center contained text */
+.footer {
+	position: relative;
+	bottom: 0px;
+	left: 0px;
+	background: salmon;
+	width: 100%;
+	height: 25px;
+	line-height: 25px;
+}
+
+/* horizontally centered div */
+.footer-center-hor{
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 250px;
+  height: 25px;
+  background-color: #ccc;
+  border-radius: 3px;
+}
+
+
+/* ======================================================== */
+#img-responsive{
+	max-width: 100%;
+	max-height: 100%;
+	border-radius: 100px 100px;
+}
+/* ======================================================== */
+/* main content of the page*/
+.thumbnail-vhc{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	border: solid red 1px;
+	width: 50%;
+	max-width: 400px;
+	min-width: 250px;
+	height: 80%;
+	overflow: auto;
+}
+.thumbnail-header{
+ text-align: center;
+}
+.thumbnail-subheader{
+	text-align: center;
+}
+.thumbnail-img{
+	margin: 0 auto;
+	height: 40%;
+	position: relative;
+	padding: 5px;
+}
+.thumbnail-img img{
+	display:block;
+	margin:auto;
+}
+
+/* ======================================================== */
+/*
+.event-wrapper{
+	border: solid red 1px;
+	margin: 15px 0;
+}
+.event-heading{
+	position: relative;
+	display: inline-block;
+	border: solid blue 1px;
+}
+.event-body{
+	border: solid red 1px;
+}*/

@@ -24,25 +24,19 @@
 <!-- Body - where the document's visible content resides -->
 <body>
 
-  <!-- ==============-->
-  <!-- Container, wraps the sites contents -->
-  <div class="container">
-
-    <!-- ==============-->
-    <!-- Navigation bar, providing navigational support for the site as a whole -->
-    <nav class="navbar">
-      <ul class="navbar-list">
-        <li><a class = "navbar-link" href="">About Me</a></li>
-        <li><a class = "navbar-link" href="">Education</a></li>
-        <li><a class = "navbar-link" href="">Experience</a></li>
-        <li><a class = "navbar-link" href="">Contact</a></li>
-      </ul>
-    </nav> <!--.navbar-->
+  <nav class="navbar">
+    <ul class="navbar-list">
+      <li><a class = "navbar-link" href="">Home</a></li>
+      <li><a class = "navbar-link" href="views/aboutme.html">About</a></li>
+      <li><a class = "navbar-link" href="">Experience</a></li>
+      <li><a class = "navbar-link" href="">Contact</a></li>
+    </ul>
+  </nav>
 
 
 
-    <!-- ==============-->
-  	<main class="thumbnail-vhc">
+  <main class="content">
+    <div class="thumbnail-vhc">
       <div class="thumbnail-header">
         <h3><em>"Stay a While, and Listen..."</em></h3>
       </div>
@@ -50,29 +44,24 @@
         <img src="../public/img/jeffreymclemore.jpg" alt="jeffrey" id = "img-responsive"></img>
       </div>
       <div class="thumbnail-subheader">
-        <h4><strong>Currently seeking internship opportunities</strong></h4>
+        <h4><strong>Currently seeking intern software development opportunities</strong></h4>
       </div>
       <div class = "thumbnail-text">
         <p>
           Have a browse, and let me know if you think
-          we're a match.
+          we're a match. And remember,
+          <em>"keep your feet on the ground!"</em>
         </p>
       </div>
-    </main><!-- .main -->
+  </main>
 
 
-
-
-    <!-- ==============-->
-  	<footer class="footer">
-      <div class="footer-center-hor">
-          &copy; Original work by Jeffrey McLemore
-      </div>
-  	</footer><!-- .footer -->
-  </div><!-- .container -->
-  <!-- ==============-->
-
-
+  <footer class="footer-sticky">
+    <div class="center-vh">
+      &copy; Original work by Jeffrey McLemore
+      Last updated 03/16/16
+    </div>
+  </footer>
 </body>
 <!--=========================================================================-->
 

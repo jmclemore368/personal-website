@@ -1,58 +1,40 @@
-/* remove margins and padding, set a min width and height*/
-html,
+/* ======================================================== */
+/*MAIN*/
+html {
+    position: relative;
+    min-height: 100%;
+}
 body {
-	margin:0;
-	padding:0;
-	height:100%;
-  min-width: 320px;
-	min-height: 480px;
+  border: solid orange 1px;
+  margin: 0 0 100px; /* bottom = footer height */
+}
+main {
+  border: solid green 1px;
+  min-height: 400px;
 }
 /* ======================================================== */
-
-/* contains the HTML page */
-.container {
-	position: relative;
-	border: solid blue 2px;
-	min-height:100%;
-}
-
-/* ======================================================== */
-/* main content of the page*/
-.thumbnail-vhc{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-	border: solid red 1px;
-	width: 50%;
-	max-width: 400px;
-	height: 80%;
-}
-/* ======================================================== */
-/* navbar sets line height to center contained text */
+/*NAVBAR*/
 .navbar {
 	position: relative;
 	background: salmon;
 	min-height: 25px;
 	line-height: 25px;
 }
-
-/* remove bullets, margin, and padding from the list */
 .navbar-list{
   list-style-type: none;
   width: 100%;
   margin: 0px;
   padding: 0px;
 }
-
-/* displays list items on the same line as a block */
 .navbar li{
-  display: inline-block;
-  width: 24%;
+  display: block;
+  float: left;
+  width: 25%;
   min-width: 75px;
   text-align: center;
+  background-color: cornflowerblue;
+  outline: 2px solid indianred;
 }
-
 .navbar-link {
   color: blue;
   position: relative;
@@ -60,19 +42,17 @@ body {
 }
 
 /* ======================================================== */
-/* footer sets line height to center contained text */
-.footer {
-	position: absolute;
-	bottom: 0px;
-	left: 0px;
-	background: salmon;
-	width: 100%;
-	height: 25px;
-	line-height: 25px;
+/* FOOTER */
+.footer-sticky {
+  border: solid red 1px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  background: salmon;
 }
-
-/* horizontally centered div */
-.footer-center-hor{
+.center-vh{
   position: absolute;
   margin: auto;
   top: 0;
@@ -80,12 +60,12 @@ body {
   bottom: 0;
   left: 0;
   width: 250px;
-  height: 25px;
-  background-color: #ccc;
+  height: 50px;
+  line-height: 25px;
+  text-align: center;
+  background-color: mediumorchid;
   border-radius: 3px;
 }
-
-
 /* ======================================================== */
 #img-responsive{
 	max-width: 100%;
@@ -93,61 +73,33 @@ body {
 	border-radius: 100px 100px;
 }
 /* ======================================================== */
+/* main content of the page*/
+.thumbnail-vhc{
+  position: absolute;
+  border: solid red 5px;
+  top: 48%;
+  left: 50%;
+  transform: translate(-48%, -50%);
+  min-width: 250px;
+}
 .thumbnail-header{
- border: solid red 1px;
  text-align: center;
+ background-color: slateblue;
 }
 .thumbnail-subheader{
-	border: solid red 1px;
 	text-align: center;
+  background-color: mediumslateblue;
+}
+.thumbnail-text{
+  background-color: lemonchiffon;
 }
 .thumbnail-img{
 	margin: 0 auto;
 	height: 40%;
 	position: relative;
-	border: solid blue 1px;
 	padding: 5px;
 }
 .thumbnail-img img{
 	display:block;
 	margin:auto;
-}
-.thumbnail-text{
-	border: solid red 1px;
-	overflow: auto;
-}
-
-.list-unstyled {
-	padding-left: 0;
-	list-style: none;
-}
-.list-inline li {
-	display: inline-block;
-	padding-right: 5px;
-	padding-left: 5px;
-	margin-bottom: 10px;
-}
-.social-icons .fa-facebook,.social-icons .fa-facebook-square{background-color:#3C599F;}
-.social-icons .fa {
-	width: 50px;
-	height: 50px;
-	line-height: 50px;
-	text-align: center;
-	color: #FFF;
-	color: rgba(255, 255, 255, 0.8);
-	-webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-}
-
-.social-icons.icon-circle .fa{
-	border-radius: 50%;
-}
-.social-icons.icon-rounded .fa{
-	border-radius:5px;
-}
-.social-icons.icon-flat .fa{
-	border-radius: 0;
 }
