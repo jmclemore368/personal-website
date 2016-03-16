@@ -6,7 +6,7 @@ html {
 }
 body {
   border: solid orange 1px;
-  margin: 0 0 100px; /* bottom = footer height */
+  margin: 0 0 50px; /* bottom = footer height */
 }
 main {
   border: solid green 1px;
@@ -68,8 +68,8 @@ main {
 }
 /* ======================================================== */
 #img-responsive{
-	max-width: 100%;
-	max-height: 100%;
+  max-width: 100%;
+  height: auto;
 	border-radius: 100px 100px;
 }
 /* ======================================================== */
@@ -102,4 +102,17 @@ main {
 .thumbnail-img img{
 	display:block;
 	margin:auto;
+}
+/* ======================================================== */
+.event-wrapper{
+	border: solid red 1px;
+	margin: 15px 0;
+}
+.event-heading{
+	position: relative;
+	display: inline-block;
+	background-color: orchid;
+}
+.event-body{
+	background-color: papayawhip;
 }
