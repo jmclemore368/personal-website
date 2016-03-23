@@ -1,0 +1,176 @@
+/* ======================================================== */
+/*MAIN*/
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+  margin: 0 0 120px 0; /* bottom = footer height */
+  font-family: "Crimson Text", serif;
+  background-color: papayawhip;
+}
+main {
+  min-height: 500px;
+}
+/* ======================================================== */
+/*NAVBAR*/
+.navbar {
+	position: relative;
+	min-height: 25px;
+	line-height: 25px;
+  z-index: 1000;
+  background: darksalmon;
+}
+.navbar-list{
+  list-style-type: none;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+.navbar li{
+  display: block;
+  float: left;
+  width: 25%;
+  min-width: 75px;
+  text-align: center;
+  outline: 1px solid salmon;
+}
+.navbar-link {
+  color: maroon ;
+  position: relative;
+  top: 30%;
+  text-shadow: 2px 4px 8px rgba(0,0,0,0.3);
+}
+
+/* ======================================================== */
+/* FOOTER */
+.footer-sticky {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 80px;
+  width: 100%;
+  background: darksalmon;
+}
+.center-vh{
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 250px;
+  height: 50px;
+  line-height: 25px;
+  text-align: center;
+  border-radius: 3px;
+  font-variant: small-caps;
+}
+.center-vh #bilbo{
+  font-family: 'Bilbo Swash Caps', cursive;
+  font-variant: normal;
+  font-size: large;
+  color: maroon;
+}
+.super{
+  vertical-align: super;
+}
+/* ======================================================== */
+#img-responsive{
+  max-width: 100%;
+  height: auto;
+	border-radius: 100px 100px;
+  border: solid grey 2px;
+  box-shadow: 3px 3px 3px #888888;
+}
+/* ======================================================== */
+/* main content of the page*/
+.content{
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+.thumbnail-vhc{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 320px;
+  box-shadow: 0 0 16px DarkSalmon;
+  background: Cornsilk;
+  margin-top: 20px;
+
+}
+h1, h4{
+  margin: 0px 0px;
+  padding: 0px;
+}
+.thumbnail-header{
+  position: relative;
+  text-transform: capitalize;
+  left: 0;
+  right: 0;
+  height: 30%;
+  text-align: center;
+  word-spacing: .5em;
+  padding: 0px 10px;
+  text-shadow: 8px 8px 8px rgba(0,0,0,0.3);
+}
+.thumbnail-img{
+}
+.thumbnail-img img{
+	display:block;
+	margin:auto;
+}
+.thumbnail-subheader{
+  font-family: 'Cinzel', serif;
+	text-align: center;
+  text-decoration: underline;
+}
+.thumbnail-subheader a{
+  color: maroon;
+  text-shadow: 2px 4px 8px rgba(0,0,0,0.3);
+}
+.thumbnail-text{
+  margin-top: 0px;
+  line-height: 1.7;
+  text-align: center;
+}
+/* ======================================================== */
+.event-heading{
+	position: relative;
+	display: inline-block;
+  word-spacing: .5em;
+  text-transform: capitalize;
+  text-align: left;
+  text-decoration: underline;
+  text-shadow: 2px 4px 8px rgba(0,0,0,0.3);
+}
+.event-body:first-child{
+  margin-top: 40px;
+}
+
+.event-body{
+  background: Cornsilk ;
+  box-shadow: 0 0 3px #ccc;
+}
+.event-body p{
+  text-align: justify;
+  line-height: 1.7;
+  text-indent: 50px;
+}
+p:first-child{
+  text-indent: 0px;
+}
+p:first-line{
+  font-variant: small-caps;
+  font-weight: bold;
+}
+.drop-cap:first-letter{
+  font-size: xx-large;
+  font-weight: bold;
+  margin-right: 2px;
+  border-radius: 3px;
+  height: 1em;
+  text-shadow: 2px 4px 8px rgba(0,0,0,0.3);
+}
