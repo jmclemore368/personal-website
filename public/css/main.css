@@ -5,20 +5,21 @@ html {
     min-height: 100%;
 }
 body {
-  margin: 0 0 80px 0; /* bottom = footer height */
+  margin: 0 0 120px 0; /* bottom = footer height */
   font-family: "Crimson Text", serif;
+  background-color: papayawhip;
 }
 main {
-  min-height: 440px;
+  min-height: 500px;
 }
 /* ======================================================== */
 /*NAVBAR*/
 .navbar {
 	position: relative;
-	background: salmon;
 	min-height: 25px;
 	line-height: 25px;
   z-index: 1000;
+  background: darksalmon;
 }
 .navbar-list{
   list-style-type: none;
@@ -32,13 +33,13 @@ main {
   width: 25%;
   min-width: 75px;
   text-align: center;
-  background-color: cornflowerblue;
-  outline: 2px solid indianred;
+  outline: 1px solid salmon;
 }
 .navbar-link {
-  color: blue;
+  color: maroon ;
   position: relative;
   top: 30%;
+  text-shadow: 2px 4px 8px rgba(0,0,0,0.3);
 }
 
 /* ======================================================== */
@@ -49,7 +50,7 @@ main {
   bottom: 0;
   height: 80px;
   width: 100%;
-  background: salmon;
+  background: darksalmon;
 }
 .center-vh{
   position: absolute;
@@ -62,7 +63,6 @@ main {
   height: 50px;
   line-height: 25px;
   text-align: center;
-  background-color: mediumorchid;
   border-radius: 3px;
   font-variant: small-caps;
 }
@@ -70,6 +70,7 @@ main {
   font-family: 'Bilbo Swash Caps', cursive;
   font-variant: normal;
   font-size: large;
+  color: maroon;
 }
 .super{
   vertical-align: super;
@@ -79,6 +80,8 @@ main {
   max-width: 100%;
   height: auto;
 	border-radius: 100px 100px;
+  border: solid grey 2px;
+  box-shadow: 3px 3px 3px #888888;
 }
 /* ======================================================== */
 /* main content of the page*/
@@ -86,7 +89,6 @@ main {
   position: relative;
   margin: 0;
   padding: 0;
-  border: solid red 1px;
 }
 .thumbnail-vhc{
   position: absolute;
@@ -94,7 +96,10 @@ main {
   left: 50%;
   transform: translate(-50%, -50%);
   min-width: 320px;
-  padding-top: 60px;
+  box-shadow: 0 0 16px DarkSalmon;
+  background: Cornsilk;
+  margin-top: 20px;
+
 }
 h1, h4{
   margin: 0px 0px;
@@ -107,12 +112,11 @@ h1, h4{
   right: 0;
   height: 30%;
   text-align: center;
-  background-color: slateblue;
   word-spacing: .5em;
   padding: 0px 10px;
+  text-shadow: 8px 8px 8px rgba(0,0,0,0.3);
 }
 .thumbnail-img{
-  background-color: maroon;
 }
 .thumbnail-img img{
 	display:block;
@@ -121,12 +125,14 @@ h1, h4{
 .thumbnail-subheader{
   font-family: 'Cinzel', serif;
 	text-align: center;
-  background-color: mediumslateblue;
   text-decoration: underline;
+}
+.thumbnail-subheader a{
+  color: maroon;
+  text-shadow: 2px 4px 8px rgba(0,0,0,0.3);
 }
 .thumbnail-text{
   margin-top: 0px;
-  background-color: lemonchiffon;
   line-height: 1.7;
   text-align: center;
 }
@@ -134,14 +140,19 @@ h1, h4{
 .event-heading{
 	position: relative;
 	display: inline-block;
-	background-color: orchid;
   word-spacing: .5em;
   text-transform: capitalize;
-  text-align: center;
-  padding: 0px 10px;
+  text-align: left;
+  text-decoration: underline;
+  text-shadow: 2px 4px 8px rgba(0,0,0,0.3);
 }
+.event-body:first-child{
+  margin-top: 40px;
+}
+
 .event-body{
-	background-color: papayawhip;
+  background: Cornsilk ;
+  box-shadow: 0 0 3px #ccc;
 }
 .event-body p{
   text-align: justify;
@@ -162,14 +173,4 @@ p:first-line{
   border-radius: 3px;
   height: 1em;
   text-shadow: 2px 4px 8px rgba(0,0,0,0.3);
-
-  /*
-  border: solid red 1px;
-  font-style: italic;
-  font-size: xx-large;
-  float: left;
-  line-height: .8;
-  width: .1em;
-  padding-top: 0px; padding-right: 8px; padding-left: 3px;
-  vertical-align: top;*/
 }
