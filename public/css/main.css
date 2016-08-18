@@ -12,13 +12,21 @@ body {
 main {
   min-height: 500px;
 }
+p {
+  margin: 0px;
+  padding: 0px;
+}
+h1, h4{
+  margin: 0px;
+  padding: 0px;
+}
 /* ======================================================== */
 /*NAVBAR*/
 .navbar {
 	position: relative;
 	min-height: 25px;
 	line-height: 25px;
-  z-index: 1000;
+  z-index: 1;
   background: darksalmon;
 }
 .navbar-list{
@@ -95,15 +103,11 @@ main {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 320px;
+  min-width: 395px;
   box-shadow: 0 0 16px DarkSalmon;
   background: Cornsilk;
   margin-top: 20px;
 
-}
-h1, h4{
-  margin: 0px 0px;
-  padding: 0px;
 }
 .thumbnail-header{
   position: relative;
@@ -113,7 +117,7 @@ h1, h4{
   height: 30%;
   text-align: center;
   word-spacing: .5em;
-  padding: 0px 10px;
+  padding: 25px 15px;
   text-shadow: 8px 8px 8px rgba(0,0,0,0.3);
 }
 .thumbnail-img{
@@ -126,17 +130,24 @@ h1, h4{
   font-family: 'Cinzel', serif;
 	text-align: center;
   text-decoration: underline;
+  padding: 15px 15px;
 }
 .thumbnail-subheader a{
   color: maroon;
   text-shadow: 2px 4px 8px rgba(0,0,0,0.3);
 }
 .thumbnail-text{
-  margin-top: 0px;
-  line-height: 1.7;
+  padding-bottom: 8px; /* To make up for the drop cap padding */
+  padding-left: 15px;
+  padding-right: 15px;
   text-align: center;
 }
+
+
 /* ======================================================== */
+.event-wrapper{
+  padding: 0em 3em;
+}
 .event-heading{
 	position: relative;
 	display: inline-block;
@@ -149,22 +160,18 @@ h1, h4{
 .event-body:first-child{
   margin-top: 40px;
 }
-
 .event-body{
   background: Cornsilk ;
   box-shadow: 0 0 3px #ccc;
+  padding: 0px 15px;
 }
 .event-body p{
   text-align: justify;
-  line-height: 1.7;
+  line-height: 2.0;
   text-indent: 50px;
 }
 p:first-child{
   text-indent: 0px;
-}
-p:first-line{
-  font-variant: small-caps;
-  font-weight: bold;
 }
 .drop-cap:first-letter{
   font-size: xx-large;
@@ -173,4 +180,27 @@ p:first-line{
   border-radius: 3px;
   height: 1em;
   text-shadow: 2px 4px 8px rgba(0,0,0,0.3);
+}
+
+/* ======================================================== */
+
+#warning {
+  opacity:1;
+  background: papayawhip;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index:1000;
+}
+#message {
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  top: 50%;
+  width: 50%;
+  text-align: center;
+  box-shadow: 0 0 16px DarkSalmon;
+  background: Cornsilk;
 }
